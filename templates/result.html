@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Face Compare APP{% end %}
+{% block detection %}
+
+<div class="result">
+    <label for="">Result:</label>
+    {% if result == True  %}
+      <p style="color :green">{{result}}</p>
+    {% else %}
+     <p style="color: red;" >{{result}}</p>
+    
+    {%end%}
+
+    <label for="">Description:</label>
+    {% if description =="No Match Found" or  description =="No Face Found in image 2" or  description =="No Face Found in image 1" %}
+            <p style="color: red;">{{description}}</p>
+    {%else%}
+    <p >{{description}}</p>
+    
+    {%end %}
+    <label for="">Time:</label>
+    <p>{{time}}</p>
+
+    
+</div>
+
+{%end%}

@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title %}Face Compare APP{% end %}
+{% block detection %}
+<div id="myProgress" hidden="true">
+    <div id="myBar">
+    </div>
+  </div>
+
+<form  method="post" enctype="multipart/form-data">
+
+    <div class="contaienr">
+    
+    <div class="setting image_picker">
+     
+      <div class="settings_wrap">
+        <label class="drop_target">
+          <div class="image_preview"></div>
+          <input id="inputFile" type="file" name="img1"/>
+        </label>
+        <div class="settings_actions vertical">
+          <a class="disabled" data-action="remove_current_image">
+            <i class="fa fa-ban"></i> 
+            Remove Current Image</a>
+          </div>
+      </div>
+    </div>
+    
+    
+    
+    
+    
+    <div class="setting2 image_picker2">
+    
+      <div class="settings_wrap2">
+        <label class="drop_target2">
+          <div class="image_preview2"></div>
+          <input id="inputFile2" type="file" name="img2"/>
+        </label>
+        <div class="settings_actions2 vertical2">
+          <a class="disabled2" data-action="remove_current_image2">
+            <i class="fa fa-ban"></i> 
+            Remove Current Image</a>
+          </div>
+      </div>
+    </div>
+
+    </div>
+    
+    <button  class="btn" type="submit" onclick="move()">     <i class="fas fa-arrow-left"></i> Compare <i class="fas fa-arrow-right"></i></button>  
+    
+    </form>
+    
+
+{% end %}

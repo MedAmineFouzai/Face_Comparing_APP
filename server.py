@@ -11,6 +11,8 @@ import torn
 from routes import *
 settings = dict(
 		debug=torn.Debug(),
+		template_path=os.path.join(os.path.dirname(__file__),"templates"),
+		static_path=os.path.join(os.path.dirname(__file__),"static")
 	)
 
 application = Application(route, **settings)

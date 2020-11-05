@@ -6,5 +6,5 @@ import tornado.web
 import tornado.escape
 import time
 import  tornado.gen
-from  .Recognizer import Simple_Faces_Compare,Foreced_Faces_Compare
+from  .recognizer import simple_faces_compare,foreced_faces_compare
 					

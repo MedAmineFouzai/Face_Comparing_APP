@@ -1,0 +1,345 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  background: #eee;
+  
+  font-family: "Open Sans", Helvetica, sans-serif;
+}
+form{
+display: grid;
+grid-template-columns: auto;
+
+}
+
+.contaienr{
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+
+.setting {
+
+  background: #fff;
+  margin: 10% auto 3px;
+  padding: 50px;
+  width: 400px;
+  height: 400px;
+}
+.setting h2 {
+  color: #999;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 0 6px;
+  line-height: 24px;
+}
+.setting a[data-action] {
+  cursor: pointer;
+  color:rgb(3, 3, 3);
+  font-size: 14px;
+  line-height: 24px;
+  transition: color 0.2s;
+  position: relative;
+  left: 50px;
+}
+.setting a[data-action] i {
+  width: 1.25em;
+  text-align: center;
+}
+.setting a[data-action]:hover {
+  color: rgb(255, 0, 0);
+  
+}
+.setting a[data-action].disabled {
+  padding: 0px;
+  margin: 10px;
+  margin: 0 auto;
+  display: block;
+  opacity: 0.35;
+  cursor: default;
+  position: relative;
+  left: 50px;
+}
+.setting a[data-action].disabled:hover {
+  color: #555;
+}
+.image_picker .settings_wrap {
+ 
+
+  overflow: hidden;
+  position: relative;
+}
+.image_picker .settings_wrap .drop_target,
+.image_picker .settings_wrap .settings_actions {
+  height: 100%;
+  width: 100%;
+  float: left;
+}
+.image_picker .settings_wrap .drop_target {
+  margin-right: 18px;
+}
+.image_picker .settings_wrap .settings_actions {
+  margin-top: 12px;
+}
+.settings_actions.vertical a {
+  display: block;
+}
+
+.drop_target {
+  position: relative;
+  cursor: pointer;
+  background: hsl(0, 0%, 90%);
+  border-top: 1px solid hsl(0, 0%, 80%);
+  border-radius: 4px;
+  width: 72px;
+  height: 72px;
+  transition: all 0.2s;
+}
+.drop_target input[type="file"] {
+  visibility: hidden;
+}
+.drop_target:before {
+  content: '☺';
+  font-family: FontAwesome;
+  position: absolute;
+  display: block;
+  width: 60px;
+  line-height: 250px;
+  text-align: center;
+  font-size: 300px;
+  color: rgba(0, 0, 0, 0.3);
+  transition: color 0.3s;
+}
+
+.drop_target:hover,
+.drop_target.dropping {
+  background: rgb(46, 134, 29);
+ 
+}
+.drop_target:hover:before,
+.drop_target.dropping:before {
+  color: rgba(0, 0, 0, 0.6);
+}
+.drop_target .image_preview {
+  
+  width: 100%;
+  height: 100%;
+  background: no-repeat center;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+
+}
+
+body {
+  overflow: hidden;
+}
+.setting:last-of-type {
+  height: 1500px;
+}
+
+
+.setting2 {
+  background: #fff;
+  margin: 10% auto 3px;
+  padding: 50px;
+  width: 400px;
+  height: 400px;
+}
+.setting2 h2 {
+  color: #999;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 0 6px;
+  line-height: 24px;
+}
+.setting2 a[data-action] {
+  cursor: pointer;
+  color: rgb(3, 3, 3);
+  font-size: 14px;
+  line-height: 24px;
+  transition: color 0.2s;
+  position: relative;
+  left: 50px;
+}
+.setting2 a[data-action] i {
+  width: 1.25em;
+  text-align: center;
+}
+.setting2 a[data-action]:hover {
+  color: rgb(255, 0, 0);
+  
+}
+.setting2 a[data-action].disabled2 {
+  padding: 0px;
+  margin: 10px;
+  margin: 0 auto;
+  display: block;
+  opacity: 0.35;
+  cursor: default;
+  position: relative;
+  left: 50px;
+}
+.setting2 a[data-action].disabled2:hover {
+  color: #555;
+}
+.image_picker2 .settings_wrap2 {
+ 
+
+  overflow: hidden;
+  position: relative;
+}
+.image_picker2 .settings_wrap2 .drop_target2,
+.image_picker2 .settings_wrap2 .settings_actions2 {
+  height: 100%;
+  width: 100%;
+  float: left;
+}
+.image_picker2 .settings_wrap2 .drop_target2 {
+  margin-right: 18px;
+}
+.image_picker2 .settings_wrap2 .settings_actions2 {
+  margin-top: 12px;
+}
+.settings_actions2.vertical2 a {
+  display: block;
+}
+
+.drop_target2 {
+  position: relative;
+  cursor: pointer;
+  background: hsl(0, 0%, 90%);
+  border-top: 1px solid hsl(0, 0%, 80%);
+  border-radius: 4px;
+  width: 72px;
+  height: 72px;
+  transition: all 0.2s;
+}
+.drop_target2 input[type="file"] {
+  visibility: hidden;
+}
+.drop_target2:before {
+  content: '☺';
+  font-family: FontAwesome;
+  position: absolute;
+  display: block;
+  width: 60px;
+  line-height: 250px;
+  text-align: center;
+  font-size: 300px;
+  color: rgba(0, 0, 0, 0.3);
+  transition: color 0.3s;
+}
+.drop_target2:hover,
+.drop_target2.dropping {
+  background: rgb(46, 134, 29);
+
+}
+.drop_target2:hover:before,
+.drop_target2.dropping:before {
+  color: rgba(0, 0, 0, 0.6);
+}
+.drop_target2 .image_preview2 {
+  width: 100%;
+  height: 100%;
+  background: no-repeat center;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+}
+
+.btn{
+padding: 20px;
+margin: 20 auto;
+display: block;
+background-color: #4CAF50; /* Green */
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+position: relative;
+bottom: 200px;
+
+}
+h1{
+  display: block;
+  padding: 20px;
+  color: #999;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 0px auto 3px; 
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         3px 3px 5px 6px #ccc;  
+}
+.contact{
+  display:inline-block;
+  position: relative;
+  bottom: 80px;
+  color: #999;
+  
+}
+.ico{
+  position:absolute;
+  top: -100px;
+  left: 82rem;
+}
+@media only screen and (max-width: 1150px) {
+.btn{
+position: relative;
+top: 0px;
+
+}
+
+h1{
+  width: 800px;
+}
+
+
+}
+
+
+#myProgress {
+  width: 50%;
+  background-color: grey;
+  position: relative;
+  top: 20px;
+  left: 20rem; 
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: green;
+}
+
+.result{
+  
+  margin: 25px auto;
+  width: 50%;
+  padding: 10px;
+  height: 500px;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         3px 3px 5px 6px #ccc;  
+}
+label{
+  color: rgb(109, 106, 106);
+  font-size: 40px;
+  font-weight: 400;
+}
+.result p {
+  color: green;
+  font-size: 25px;
+  font-weight: 400;
+}
